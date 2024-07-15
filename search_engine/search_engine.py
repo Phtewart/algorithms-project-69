@@ -8,6 +8,7 @@ def search(docs, text):
         for word in term:
             if sub_text['text'].find(str(word)) != -1:
                 out.append(sub_text['id'])
+                break
 
     return out
 
